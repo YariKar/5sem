@@ -1,0 +1,113 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "Все файлы (*)",
+    "fileStates": {
+        "/home/yar/study/webs/cw/public/levels/level1.json": {
+            "scale": 0.8364453125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 630.6449353196657,
+                "y": 388.5490122822584
+            }
+        },
+        "/home/yar/study/webs/cw/public/levels/level1.json#grass_and_water_64X64": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "/home/yar/study/webs/cw/public/levels/level1.json#preview": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "/home/yar/study/webs/cw/public/levels/level1.tmj": {
+            "scale": 0.6691562499999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 795.7782655396255,
+                "y": 572.362583477327
+            }
+        },
+        "/home/yar/study/webs/cw/public/levels/level1.tmj#preview": {
+            "scaleInDock": 1
+        },
+        "/home/yar/study/webs/cw/public/public/images/path.tsx": {
+            "scaleInDock": 1
+        },
+        "Overworld.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1
+        },
+        "level1.tmx": {
+            "scale": 0.6691562499999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 798.7671040956429,
+                "y": 396.02110867230186
+            }
+        },
+        "level1.tmx#preview": {
+            "scaleInDock": 1
+        },
+        "level1_1.tmj": {
+            "scale": 0.8364453125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 639.0136832765144,
+                "y": 308.44813898099284
+            }
+        },
+        "level1_1.tmj#grass_and_water_64X64": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "level1_1.tmj#preview": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "map.tmx": {
+            "scale": 0.6691562499999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 795.7782655396255,
+                "y": 390.04343156026715
+            }
+        },
+        "path.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1
+        },
+        "preview.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "street_0.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1
+        },
+        "water_0.tsx": {
+            "scaleInDock": 1
+        }
+    },
+    "last.imagePath": "/home/yar/study/webs/cw/tiled/images",
+    "map.height": 25,
+    "map.lastUsedFormat": "json",
+    "map.width": 40,
+    "openFiles": [
+    ],
+    "project": "cw_map_2v.tiled-project",
+    "recentFiles": [
+        "map.tmx",
+        "/home/yar/study/webs/cw/public/levels/level1.json",
+        "level1.tmx",
+        "preview.tsx",
+        "/home/yar/study/webs/cw/public/levels/level1.tmj"
+    ],
+    "tileset.embedInMap": true
+}

@@ -1,0 +1,25 @@
+.data_box {
+    background: #4169e1;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    color: "white";
+    font-size: 20px;
+}
+
+
+.dialog_window {
+    background-color: #4169e173;
+    border-color: gray;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.main_bar{
+    background: #4169e1;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}

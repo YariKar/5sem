@@ -1,0 +1,47 @@
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(90deg, #A18A8B,	#897879);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game_over_grid {
+    min-width: 60%;
+    min-height: 60%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, min-content);
+    grid-template-rows: max-content;
+    column-gap: 10px;
+    padding: 20px;
+}
+
+.column {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.column_name {
+    padding: 10px;
+    font-size: 22px;
+    color: black;
+
+    text-decoration: underline;
+}
+
+.row {
+    font-size: large;
+    color: black;
+    margin: 7px;
+    padding: 5px;
+
+}

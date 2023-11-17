@@ -1,0 +1,157 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "/home/yar/study/webs/cw/public/levels/empty_map.json",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "Все файлы (*)",
+    "fileStates": {
+        "/home/yar/study/webs/cw/public/levels/empty_map.json": {
+            "scale": 0.6691562499999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 797.2726848176343,
+                "y": -128.52005790874705
+            }
+        },
+        "/home/yar/study/webs/cw/public/levels/first_map.tmj": {
+            "scale": 0.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 715,
+                "y": 362
+            }
+        },
+        "Beach.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Overworld.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "River.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 3,
+            "scaleInEditor": 1
+        },
+        "Water.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 4,
+            "scaleInEditor": 1
+        },
+        "grass.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "map.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 711,
+                "y": 354
+            }
+        },
+        "map_2.tmx": {
+            "scale": 0.59553125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 909.2721834496512,
+                "y": 392.92648370677455
+            }
+        },
+        "map_begin.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 408.6666666666666,
+                "y": 193.33333333333337
+            }
+        },
+        "objects.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "part_build.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "part_road.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "path.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "preview.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "road.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "street_0.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tiles.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "water_0.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.externalTilesetPath": "/home/yar/study/webs/cw/tiled",
+    "last.imagePath": "/home/yar/study/webs/cw/tiled/images/gfx",
+    "map.height": 25,
+    "map.lastUsedFormat": "json",
+    "map.renderOrder": null,
+    "map.width": 50,
+    "openFiles": [
+        "water_0.tsx",
+        "preview.tsx",
+        "part_road.tsx",
+        "path.tsx",
+        "map_2.tmx",
+        "road.tsx",
+        "street_0.tsx",
+        "Water.tsx",
+        "River.tsx",
+        "part_build.tsx",
+        "Overworld.tsx",
+        "objects.tsx",
+        "map.tmx",
+        "/home/yar/study/webs/cw/public/levels/empty_map.json"
+    ],
+    "project": "cw_map.tiled-project",
+    "recentFiles": [
+        "water_0.tsx",
+        "preview.tsx",
+        "part_road.tsx",
+        "path.tsx",
+        "map_2.tmx",
+        "road.tsx",
+        "street_0.tsx",
+        "Water.tsx",
+        "River.tsx",
+        "part_build.tsx",
+        "Overworld.tsx",
+        "objects.tsx"
+    ],
+    "tileset.lastUsedFilter": "Файлы набора тайлов Tiled (*.tsx *.xml)",
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.type": 0
+}

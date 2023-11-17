@@ -1,0 +1,120 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "level2.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "#roads": {
+            "dynamicWrapping": false
+        },
+        "/home/yar/study/webs/cw/public/levels/level1.json": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 0.75,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 334,
+                "y": 396
+            }
+        },
+        "/home/yar/study/webs/cw/public/levels/level1.json#grass_water": {
+            "scaleInDock": 1
+        },
+        "/home/yar/study/webs/cw/public/levels/level1.json#roads": {
+            "scaleInDock": 1
+        },
+        "/home/yar/study/webs/cw/public/levels/level1.json#spritesheet": {
+            "scaleInDock": 1
+        },
+        "/home/yar/study/webs/cw/public/levels/level1.json#spritesheet_all": {
+            "scaleInDock": 1
+        },
+        "/home/yar/study/webs/cw/public/levels/level2.json": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 890,
+                "y": 480
+            }
+        },
+        "/home/yar/study/webs/cw/public/levels/level2.json#grass_water": {
+            "scaleInDock": 1
+        },
+        "/home/yar/study/webs/cw/public/levels/level2.json#roads": {
+            "scaleInDock": 1
+        },
+        "/home/yar/study/webs/cw/public/levels/level2.json#spritesheet": {
+            "scaleInDock": 1
+        },
+        "/home/yar/study/webs/cw/public/levels/level2.json#spritesheet_all": {
+            "scaleInDock": 1
+        },
+        "level1.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 0.75,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 1171.3333333333333,
+                "y": 398.6666666666667
+            }
+        },
+        "level1.tmx#grass_water": {
+            "scaleInDock": 1
+        },
+        "level1.tmx#roads": {
+            "scaleInDock": 1
+        },
+        "level1.tmx#spritesheet": {
+            "scaleInDock": 1
+        },
+        "level1.tmx#spritesheet_all": {
+            "scaleInDock": 1
+        },
+        "level2.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 928,
+                "y": 448
+            }
+        },
+        "level2.tmx#grass_water": {
+            "scaleInDock": 1
+        },
+        "level2.tmx#roads": {
+            "scaleInDock": 1
+        },
+        "level2.tmx#spritesheet": {
+            "scaleInDock": 1
+        },
+        "level2.tmx#spritesheet_all": {
+            "scaleInDock": 1
+        }
+    },
+    "last.imagePath": "/home/yar/study/webs/cw/public/images",
+    "map.height": 25,
+    "map.lastUsedFormat": "json",
+    "map.width": 40,
+    "openFiles": [
+        "/home/yar/study/webs/cw/public/levels/level1.json",
+        "level2.tmx"
+    ],
+    "project": "cw_maps.tiled-project",
+    "recentFiles": [
+        "/home/yar/study/webs/cw/public/levels/level1.json",
+        "level2.tmx",
+        "/home/yar/study/webs/cw/public/levels/level2.json",
+        "level1.tmx"
+    ],
+    "tileset.embedInMap": true
+}

@@ -41,7 +41,7 @@ export const BrokersComponent = () => {
         )
     }
 
-    return <h1> Bad</h1>
+    return <h1> Wait</h1>
 
 }
 
@@ -106,6 +106,7 @@ function AddBroker(){
                     <input type="number" value={inputMoney}
                            placeholder="start money" onChange={ChangeMoney} style={{fontSize: 18}}/>
                     <button
+                        className='button'
                         onClick={CloseAddWindow}
                         color="primary" autoFocus style={{fontSize: 18}}>
                         Add
@@ -198,8 +199,8 @@ function Broker(props){
         <div className="data_box">
             <p>Name: {props.value.name}</p>
             <p>Money:  {props.value.money}</p>
-            <button onClick={ChangeWindowOpen} style={{fontSize: 20}}> Change</button>
-            <button onClick={DeleteBroker} value={props.value.id} style={{fontSize: 20}}> Delete</button>
+            <button className='button' onClick={ChangeWindowOpen} style={{fontSize: 20}}> Change</button>
+            <button className='button' onClick={DeleteBroker} value={props.value.id} style={{fontSize: 20}}> Delete</button>
             <dialog open={open} className='dialog_window'>
                 <p> Change money: {props.value.name}</p>
                 <form>

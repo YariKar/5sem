@@ -1,9 +1,8 @@
-import {useEffect, useState} from "react";
-import {useDispatch, useSelector} from "react-redux";
-//import {useConnectSocket} from "./hooks/useConnectSocket";
-//import {SocketApi} from "./api/socket-api";
-
-
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { SocketService, useConnectSocket } from "../Socket.service";
+const get_path = "http://localhost:3001/getAllStock"
+const default_path = "http://localhost:3000/stock"
 const TradingComponent = () => {
 
     const listTradings = useSelector(state => state.listTrading)
@@ -17,7 +16,10 @@ const TradingComponent = () => {
 
     useConnectSocket()
     useEffect(() => {
-        SocketApi.socket.on("trading", (data) => {
+        SocketService.socket.on("trading", (data) => {
+            if(trading.prices && data>trading.prices.length){
+                clickStop()
+            }
             console.log("trading" + data)
             setChange(data)
         })
@@ -25,9 +27,9 @@ const TradingComponent = () => {
 
 
     useEffect(() => {
-
+        if (clickStop) { clickStop()}
         (async () => {
-            const data = await fetch("http://localhost:3001/getStock")
+            const data = await fetch(get_path)
                 .then(res => res.json())
 
 
@@ -38,7 +40,7 @@ const TradingComponent = () => {
                     return g.id;
                 }).indexOf(el);
                 if (index > -1) {
-                    tr.push({id: data[index].id, name: data[index].name, prices: data[index].data})
+                    tr.push({ id: data[index].id, name: data[index].name, prices: data[index].data.reverse() })
 
                 }
 
@@ -51,17 +53,33 @@ const TradingComponent = () => {
 
 
     const clickStart = () => {
-        if (speed > 0 && date)
-            SocketApi.socket.emit("getData", {date, speed})
+        let index = 0
+        let date_str = new Date(date).toDateString()
+        let find_flag = false
+        //let a =new Date(trading[0].prices[0].Date).toDateString()
+        //console.log(date_str,a, date_str==a)
+        if (speed > 0 && date && trading){
+            for (let i = 0; i < trading[0].prices.length ; i++) {
+                let cur_date = new Date(trading[0].prices[i].Date).toDateString()
+                if(date_str == cur_date){
+                    console.log(date_str, cur_date, i)
+                    index = i
+                    find_flag = true
+                    break
+                }
+                    
+            }
+            if(!find_flag){
+                console.log("no select data, the values begin to be taken from the beginning")
+            }
+            SocketService.socket.emit("getData", { date, speed, index })
+        }
         console.log("start")
         console.log(trading)
 
     }
     const clickStop = () => {
-        SocketApi.socket.emit("stop")
-        clearInterval(intervalID)
-        setIntervalID(null)
-        //setChange(0)
+        SocketService.socket.emit("stop")
     }
     const setSpeedChange = (e) => {
         setSpeed(e.target.value)
@@ -72,31 +90,37 @@ const TradingComponent = () => {
 
     if (stocks?.length) {
         //console.log(stocks)
+        
+        if(!trading[0]?.prices[change]){
+            clickStop()
+            window.location = default_path
+        }
         return (
-            <div style={{padding: 10, margin: 10}}>
+            <div style={{ padding: 10, margin: 10 }}>
                 <div >
-                    <div>
-                        <label style={{margin: 10, fontSize: 18}}>Дата начала</label>
-                        <input type="date" onChange={setDateChange} value={date} style={{fontSize: 18}}/>
+                    <div className="data_box">
+                        <label style={{ margin: 10, fontSize: 18 }}>Begin date</label>
+                        <input type="date" onChange={setDateChange} value={date} style={{ fontSize: 18 }} />
                     </div>
-                    <div>
-                        <label style={{margin: 10, fontSize: 18}}>Скорость</label>
-                        <input type="number" onChange={setSpeedChange} value={speed} style={{fontSize: 18}}/>
+                    <div className="data_box">
+                        <label style={{ margin: 10, fontSize: 18 }}>Speed</label>
+                        <input type="number" onChange={setSpeedChange} value={speed} style={{ fontSize: 18 }} />
                     </div>
 
-                    <button onClick={clickStart} style={{fontSize: 18}}>START</button>
-                    <button onClick={clickStop} style={{fontSize: 18}}>STOP</button>
+                    <button className="button" onClick={clickStart} style={{ fontSize: 18 }}>START</button>
+                    <button className="button" onClick={clickStop} style={{ fontSize: 18 }}>STOP</button>
                 </div>
 
                 <h1>Trading data:</h1>
-                <div style={{backgroundColor:"#FF4B3A", color:"white", fontSize:18, padding:10, borderRadius:10}}>
+                <div className="data_box">
                     {
                         (change > 0 && date && speed) ? (
                             trading.map(trad => (
                                 <div key={trad.id}>
                                     <>
                                         {trad.name}<br></br>
-                                        {trad.prices[change].Open}
+                                        {trad.prices[change]?.Open} <br></br>
+                                        {trad.prices[change]?.Date}
                                     </>
                                     <br></br>
                                     <br></br>

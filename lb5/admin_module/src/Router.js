@@ -3,10 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { BrokersComponent } from "./components/Brokers.component";
 import { StockComponent } from "./components/Stock.component";
 import "./components/Components_style.css"
-/*import ListUser from "../pages/listuser/ListUser";
-import ListStock from '../pages/stock/ListStock'
-import Settings from '../pages/setting/Settings'
-import Graph from "../pages/graph/Graph";*/
+import TradingComponent from "./components/Trading.component";
 
 function NavigationBar() {
     return (
@@ -37,19 +34,23 @@ export default function Router() {
 }
 
 
-function Home() { return <div><h1>Welcome to stock exchange admin module</h1></div> }
-function About() { return <div><h3>About</h3></div> }
+function Home() { return <div className="data_box"><h1>Welcome to stock exchange admin module</h1></div> }
+function About() {
+    return (
+    <div className="data_box"><h1>About pages:</h1>
+        <h3>Brokers - brokers list with add, delete and change functions</h3>
+        <h3>Stocks - stocks list with show grahics and choose stocks function</h3>
+        <h3>Trading - a page with the ability to start and stop trading on current shares, as well as choose the year and the rate of change in the cost of stocks </h3>
+    </div>
+    )
+}
 function NoMatch() { return <div><h3>No match!</h3></div> }
-function Brokers(){
+function Brokers() {
     return <BrokersComponent></BrokersComponent>
 }
-function Stock(){
+function Stock() {
     return <StockComponent></StockComponent>
 }
-function Trading(){
-    return <div><h3>Trading</h3></div> 
+function Trading() {
+    return <TradingComponent></TradingComponent>
 }
-/* <Route path="/dashboard" element={<ListUser/>}></Route>
-                    <Route path="/stocks" element={<ListStock/>}></Route>
-                    <Route path="/settings" element={<Settings/>}></Route>
-                    <Route path="/graph/:id" element={<Graph/>}></Route>*/

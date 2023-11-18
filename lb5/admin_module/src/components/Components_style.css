@@ -23,3 +23,9 @@
     display: flex;
     justify-content: space-around;
 }
+
+.button{
+    background-color: rgba(168, 168, 168, 0.623);
+    border-radius: 10px;
+    border-style: outset;
+}
